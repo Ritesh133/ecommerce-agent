@@ -7,6 +7,7 @@ import Hero from "@/components/layout/Hero";
 import ChatInput from "@/components/chat/ChatInput";
 import SuggestedPrompts from "@/components/chat/SuggestedPrompts";
 import TrustedStores from "@/components/layout/TrustedStores";
+import ConnectedStores from "@/components/layout/ConnectedStores";
 
 export default function Home() {
   const [message, setMessage] = useState("");
@@ -40,7 +41,8 @@ export default function Home() {
               onSelect={setMessage}
             />
 
-            <TrustedStores />
+            {/* <TrustedStores /> */}
+            <ConnectedStores />
 
           </div>
 
